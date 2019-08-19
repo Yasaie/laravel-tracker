@@ -76,10 +76,10 @@ class Tracker extends Model
         $this->attributes['browser'] = "$item $version";
 
         # Robot
-        $this->attributes['robot'] = $this->agent()->robot();
+        $this->attributes['robot'] = $this->agent()->robot() ?: null;
 
         # Device
-        $this->attributes['device'] = $this->agent()->device();
+        $this->attributes['device'] = $this->agent()->device() ?: null;
     }
 
     /**
