@@ -5,6 +5,9 @@
     "require": {
         "jenssegers/agent": "~2.6"
     },
+    "suggest": {
+        "hekmatinasser/verta": "^1.9"
+    },
     "license": "MIT",
     "authors": [
         {
