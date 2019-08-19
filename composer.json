@@ -1,0 +1,27 @@
+{
+    "name": "yasaie/laravel-tracker",
+    "description": "Laravel Tracker and Visits",
+    "type": "library",
+    "require": {
+        "jenssegers/agent": "~2.6"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Payam Yasaie",
+            "email": "payam.yasaie@outlook.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Yasaie\\Tracker\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Yasaie\\Tracker\\ServiceProvider"
+            ]
+        }
+    }
+}
