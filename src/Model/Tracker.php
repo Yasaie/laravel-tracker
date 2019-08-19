@@ -79,7 +79,7 @@ class Tracker extends Model
         $this->attributes['robot'] = $this->agent()->robot();
 
         # Device
-        $this->attributes['robot'] = $this->agent()->device();
+        $this->attributes['device'] = $this->agent()->device();
     }
 
     /**
