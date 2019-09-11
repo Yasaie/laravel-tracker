@@ -39,7 +39,7 @@ class Tracker
         $tracker->param3 = isset($parameters[2]) ? $parameters[2] : null;
         $tracker->method = $request->method();
         $tracker->ip_address = $request->ip();
-        $tracker->agent = $_SERVER['HTTP_USER_AGENT'];
+        $tracker->agent = isset($_SERVER['HTTP_USER_AGENT']) ? $_SERVER['HTTP_USER_AGENT'] : '';
 
         $tracker->save();
 
